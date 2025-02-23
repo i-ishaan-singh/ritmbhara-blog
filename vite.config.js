@@ -3,6 +3,9 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  build: {
+    outDir: 'rt-server/public' // Replace with your desired folder name
+  },
   plugins: [react()],
   resolve: {
     alias: {

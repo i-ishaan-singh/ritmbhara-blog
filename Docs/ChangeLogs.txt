@@ -1,0 +1,39 @@
+# Ritmbhara Svasth Privar
+
+## Added
+
+### UI
+
+- Added Theme builder and support for scss.
+
+#### Components
+- Added Basic components
+-- Buttons
+-- White Spacer Cards
+-- Step Cards
+-- Typography
+-- Lists
+
+#### Layouts
+- Added Layout Components
+-- Text Sections
+-- H2 DEscription
+-- H3 DEscription
+-- MidSection
+-- Right Section
+
+#### Icons
+- Added Icons
+-- Bars
+- Close Icon
+
+#### Pages
+- Footer
+- Header
+- Homepage
+- BarsNav
+
+#### Theme
+- Added basic theme for new Webpage
+
+
