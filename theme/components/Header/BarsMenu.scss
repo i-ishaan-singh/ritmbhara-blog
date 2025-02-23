@@ -1,0 +1,44 @@
+.bars-nav {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #f5f4f0;
+    flex-direction: column;
+    gap: 2rem;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.29s;
+    user-select: none;
+
+    &.display{
+        z-index: 100;
+    }
+
+    &.transition{
+        opacity: 1;
+    }
+}
+
+
+
+img.bars-logo {
+    width: 15rem;
+}
+
+.bars-nav-content{
+    width: 100%;
+    overflow: auto;
+}
+
+.bars-cross-icon{
+    position: fixed;
+    right: 3.2rem;
+    top: 2rem;
+}
+
+.header-bars{
+    user-select: none;
+}

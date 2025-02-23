@@ -1,0 +1,15 @@
+.lp-img {
+    position: absolute;
+    width: 100%;
+    top: -125%;
+    left: 0;
+}
+
+.lp-img-w{
+    position: relative;
+}
+
+.lp-wrp{
+    display: grid;
+    grid-template-columns: 42% auto;
+}

@@ -5,14 +5,24 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "npm run dev",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "theme": "node ./scripts/buildTheme.cjs"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
     "axios": "^1.6.7",
+    "classnames": "^2.5.1",
+    "node-sass": "^9.0.0",
+    "node-watch": "^0.7.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-feather": "^2.0.10",
+    "react-helmet-async": "^2.0.5",
+    "react-router-dom": "^6.21.3",
+    "sass": "^1.70.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

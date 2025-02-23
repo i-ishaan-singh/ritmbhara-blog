@@ -1,0 +1,37 @@
+
+
+
+$base-font-size-value: 15;
+$base-font-size: $base-font-size-value+px;
+
+$palette-hue: 94;
+
+$accent-saturation: 10%;
+//$accent-saturation: 25%;
+
+$contrast-hue: 48;
+
+
+$b-palette-light: hsl($palette-hue, $accent-saturation, 99%);
+$b-palette-base: hsl($palette-hue, 20%, 95%);
+
+$b-palette-accent-lighter: hsl($palette-hue, $accent-saturation, 86%);
+$b-palette-accent-light: hsl($palette-hue, $accent-saturation, 56%);
+$b-palette-accent: hsl($palette-hue, $accent-saturation, 46%);
+$b-palette-accent-dark: hsl($palette-hue, $accent-saturation, 36%);
+$b-palette-accent-darker: hsl($palette-hue,$accent-saturation, 16%);
+
+$b-palette-dark-base: hsl($palette-hue, 8%, 7%);
+$b-palette-dark: hsl($palette-hue, 1%, 20%);
+
+$b-contrast-light: hsl($contrast-hue, $accent-saturation, 99%);
+$b-contrast-base: hsl($contrast-hue, 20%, 95%);
+
+$b-contrast-accent-lighter: hsl($contrast-hue, $accent-saturation, 86%);
+$b-contrast-accent-light: hsl($contrast-hue, $accent-saturation, 56%);
+$b-contrast-accent: hsl($contrast-hue, $accent-saturation, 46%);
+$b-contrast-accent-dark: hsl($contrast-hue, $accent-saturation, 36%);
+$b-contrast-accent-darker: hsl($contrast-hue, $accent-saturation, 16%);
+
+$b-contrast-dark-base: hsl($contrast-hue, 8%, 7%);
+$b-contrast-dark: hsl($contrast-hue, 1%, 20%);

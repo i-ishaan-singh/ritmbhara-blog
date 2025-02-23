@@ -1,0 +1,68 @@
+@for $i from 1 through 80 {
+    $value: toRem(3 * $i);
+
+    // Padding All Sides
+    .p-#{$i} {
+        padding: $value;
+    }
+
+    // Padding Top
+    .pt-#{$i} {
+        padding-top: $value;
+    }
+
+    // Padding Right
+    .pr-#{$i} {
+        padding-right: $value;
+    }
+
+    // Padding Bottom
+    .pb-#{$i} {
+        padding-bottom: $value;
+    }
+
+    // Padding Left
+    .pl-#{$i} {
+        padding-left: $value;
+    }
+
+    // Padding X (Left and Right)
+    .px-#{$i} {
+        padding-left: $value;
+        padding-right: $value;
+    }
+
+    // Padding Y (Top and Bottom)
+    .py-#{$i} {
+        padding-top: $value;
+        padding-bottom: $value;
+    }
+}
+
+
+.pl-180,
+.pr-180,
+.pl-200,
+.pr-200 {
+    transition: 0.3s;
+}
+
+.pl-180 {
+    padding-left: toRem(540);
+}
+
+
+.pr-180 {
+    padding-right: toRem(540);
+}
+
+
+.pl-200 {
+    padding-left: toRem(600);
+}
+
+
+.pr-200 {
+    padding-right: toRem(600);
+}
+

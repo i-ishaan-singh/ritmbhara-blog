@@ -1,0 +1,11 @@
+img.footer-logo {
+    max-width: 100%;
+    width: toRem(250);
+}
+
+a.footer-link {
+    height: 3em;
+    width: 3em;
+    display: flex;
+    color: $palette-dark;
+}

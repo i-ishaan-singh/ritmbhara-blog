@@ -1,0 +1,231 @@
+
+body, html{
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding-top: 9rem;
+}
+
+.fr {
+    display: flex;
+    flex-direction: row;
+}
+
+.fc {
+    display: flex;
+    flex-direction: column;
+}
+
+.fw {
+    flex-wrap: wrap;
+}
+
+.fnw {
+    flex-wrap: nowrap;
+}
+
+.fns {
+    flex-shrink: 0;
+}
+
+.fh {
+    height: 100%;
+}
+
+
+.fs0 {
+    flex-shrink: 0;
+}
+
+.fw {
+    width: 100%;
+}
+
+.oa {
+    overflow: auto;
+}
+
+.oh {
+    overflow: hidden;
+}
+
+.os {
+    overflow: scroll;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+.ai-s {
+    align-items: flex-start;
+}
+
+.ai-e {
+    align-items: flex-end;
+}
+
+.ai-b {
+    align-items: baseline;
+}
+
+.ai-st {
+    align-items: stretch;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.jc-s {
+    justify-content: flex-start;
+}
+
+.jc-e {
+    justify-content: flex-end;
+}
+
+.jc-sa {
+    justify-content: space-around;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.jc-se {
+    justify-content: space-evenly;
+}
+
+.as-c {
+    align-self: center;
+}
+
+.as-s {
+    align-self: flex-start;
+}
+
+.as-e {
+    align-self: flex-end;
+}
+
+.as-b {
+    align-self: baseline;
+}
+
+.as-st {
+    align-self: stretch;
+}
+
+.ta-l {
+    text-align: left;
+}
+
+.ta-c {
+    text-align: center;
+}
+
+.ta-r {
+    text-align: right;
+}
+
+.ta-j {
+    text-align: justify;
+}
+
+.dn {
+    display: none;
+}
+
+.ov-h{
+    overflow: hidden;
+}
+
+.img-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover; /* Ensures the image fully covers the container */
+    }
+}
+
+@for $i from 3 through 30 {
+    
+    $value: toRem(3 * $i);
+
+    .fg-#{$i} {
+        gap: $value;
+    }
+    .cg-#{$i} {
+        column-gap: $value;
+    }
+    .rg-#{$i} {
+        row-gap: $value;
+    }
+}
+
+.r-section{
+    max-width: 100%;
+    margin-left: auto;
+}
+
+@for $i from 1 through 24 {
+    .w-#{$i} {
+        width: (100% / 24) * $i;
+    }
+}
+
+.br {
+    border-radius: toRem(72);
+}
+
+.br-tl {
+    border-top-left-radius: toRem(72);
+}
+
+.br-tr {
+    border-top-right-radius: toRem(72);
+}
+
+.br-bl {
+    border-bottom-left-radius: toRem(72);
+}
+
+.br-br {
+    border-bottom-right-radius: toRem(72);
+}
+
+
+
+.br-2x {
+    border-radius: toRem(70);
+}
+
+.br-tl-2x {
+    border-top-left-radius: toRem(70);
+}
+
+.br-tr-2x {
+    border-top-right-radius: toRem(70);
+}
+
+.br-bl-2x {
+    border-bottom-left-radius: toRem(70);
+}
+
+.br-br-2x {
+    border-bottom-right-radius: toRem(70);
+}
+
+
+.prevent-scroll{
+    overflow: hidden;
+}

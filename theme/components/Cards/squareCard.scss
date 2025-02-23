@@ -1,0 +1,54 @@
+
+li.light-square-cards {
+    list-style: none;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.lsc-button.fw.ta-c {
+    position: absolute;
+    left: 0;
+    bottom: toRem(60);
+}
+
+.lsc-lft-arr, .lsc-rt-arr {
+    position: absolute;
+    top: calc(50% + 3rem);
+    height: 3rem;
+    width: 3rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.3s;
+
+    svg{
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+.lsc-lft-arr{
+    left: toRem(40);
+    
+}
+
+
+.lsc-rt-arr{
+    right: toRem(40);
+}
+
+.lsc {
+    position: relative;
+    user-select: none;
+
+    &:hover{
+        .lsc-lft-arr, .lsc-rt-arr{
+            display: flex;
+            opacity: 1
+        }
+    }
+}

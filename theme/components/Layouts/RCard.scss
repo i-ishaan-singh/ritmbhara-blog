@@ -1,0 +1,21 @@
+.r-card-wrapper{
+    height: 100%;   
+    display: grid;
+    grid-template-columns: 0rem auto;
+}
+
+.right-card-image-container {
+    width: 32rem;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+    object-fit: fill;
+    display: flex;
+    margin-left: -32rem;
+    justify-content: center;
+    align-items: center;
+}
+
+img.r-card-img {
+    position: absolute;
+}

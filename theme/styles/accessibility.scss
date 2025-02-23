@@ -1,0 +1,14 @@
+
+:focus {
+    outline: none;
+}
+
+a:focus-visible, .rt-button:focus-visible, div:focus-visible, svg:focus-visible {
+    outline: toRem(3) solid $palette-dark-base;
+    outline-offset: toRem(6);
+}
+
+
+a:not(.rt-button):focus-visible, div:focus-visible, svg:focus-visible{
+    border-radius: 4px;
+}

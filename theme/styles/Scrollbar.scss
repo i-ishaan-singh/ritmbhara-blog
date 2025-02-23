@@ -1,0 +1,35 @@
+::-webkit-scrollbar {
+    width: 1rem;  /* Width for vertical scrollbar */
+    height: 1rem; /* Height for horizontal scrollbar */
+}
+
+/* Scrollbar thumb (draggable part) */
+::-webkit-scrollbar-thumb {
+    background: $contrast-accent; /* Gradient color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Scrollbar track on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $contrast-accent-light;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: $contrast-accent-dark;
+}
+
+/* Scrollbar track (background behind thumb) */
+::-webkit-scrollbar-track {
+    background: $contrast-base; /* Dark track */
+    border-radius: 5px;
+}
+
+/* Scrollbar corner (between horizontal & vertical scrollbar) */
+::-webkit-scrollbar-corner {
+    background: #111;
+}
+
+// * {
+//     scrollbar-color: #ff7b00 #1e1e1e; /* thumb color + track color */
+//     scrollbar-width: thin; /* 'auto' or 'thin' */
+// }

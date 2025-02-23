@@ -1,0 +1,29 @@
+:root {
+    color-scheme: light;
+}
+
+*{
+    box-sizing: border-box
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+@import './variables/all.scss';
+
+@function toRem($value) {
+    @return ($value / $base-font-size-value) + rem;
+}
+
+
+@function toEm($value, $base) {
+    @return ($value / $base) + rem;
+}
+
+
+@import './fonts/all.scss';
+@import './styles/all.scss';
+@import './components/all.scss';
+@import './styles/adaptibility.scss';

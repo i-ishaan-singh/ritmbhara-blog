@@ -1,0 +1,107 @@
+
+
+$palette-light: light-dark($b-palette-light, $b-palette-dark);
+$palette-base: light-dark($b-palette-base, $b-palette-dark-base);
+
+$palette-accent-lighter: light-dark($b-palette-accent-lighter, $b-palette-accent-darker);
+$palette-accent-light: light-dark($b-palette-accent-light, $b-palette-accent-dark);
+$palette-accent: light-dark($b-palette-accent, $b-palette-accent);
+$palette-accent-dark: light-dark($b-palette-accent-dark, $b-palette-accent-light);
+$palette-accent-darker: light-dark($b-palette-accent-darker, $b-palette-accent-lighter);
+
+$palette-dark-base: light-dark($b-palette-dark-base, $b-palette-base);
+$palette-dark: light-dark($b-palette-dark, $b-palette-light);
+
+$contrast-light: light-dark($b-contrast-light, $b-contrast-dark);
+$contrast-base: light-dark($b-contrast-base, $b-contrast-dark-base);
+
+$contrast-accent-lighter: light-dark($b-contrast-accent-lighter, $b-contrast-accent-darker);
+$contrast-accent-light: light-dark($b-contrast-accent-light, $b-contrast-accent-dark);
+$contrast-accent: light-dark($b-contrast-accent, $b-contrast-accent);
+$contrast-accent-dark: light-dark($b-contrast-accent-dark, $b-contrast-accent-light);
+$contrast-accent-darker: light-dark($b-contrast-accent-darker, $b-contrast-accent-lighter);
+
+$contrast-dark-base: light-dark($b-contrast-dark-base, $b-contrast-base);
+$contrast-dark: light-dark($b-contrast-dark, $b-contrast-light);
+
+.palette-light {
+    background: $palette-light;
+    color: $palette-dark;
+}
+
+.palette-base {
+    background: $palette-base;
+    color: $palette-dark;
+}
+
+.palette-accent-hover:hover {
+    background: $palette-accent-light;
+}
+
+
+.palette-accent-hover:hover:active {
+    background: $palette-accent-dark;
+}
+
+.palette-accent-hover {
+    background: $palette-accent;
+    color: $palette-light;
+}
+
+.palette-accent {
+    background: $palette-accent;
+    color: $palette-light;
+}
+
+
+.palette-accent-lighter {
+    background: $palette-accent-lighter;
+    color: $palette-dark;
+}
+
+.palette-accent-light {
+    background: $palette-accent-light;
+    color: $palette-light;
+}
+
+
+.palette-accent-darker {
+    background: $palette-accent-darker;
+    color: $palette-light;
+}
+.palette-accent-dark {
+    background: $palette-accent-dark;
+    color: $palette-light;
+}
+
+.palette-dark {
+    background: $palette-dark;
+    color: $palette-light;
+}
+
+
+
+.contrast-light {
+    background: $contrast-light;
+    color: $contrast-dark;
+}
+
+.contrast-base {
+    background: $contrast-base;
+    color: $contrast-dark;
+}
+
+.contrast-accent {
+    background: $contrast-accent;
+    color: $contrast-light;
+}
+
+.contrast-accent-light {
+    background: $contrast-accent-light;
+    color: $contrast-light;
+}
+
+.contrast-dark {
+    background: $contrast-dark;
+    color: $contrast-light;
+}

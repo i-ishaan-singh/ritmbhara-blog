@@ -1,0 +1,64 @@
+$heading-xlarge: toRem(63);
+$heading-large: toRem(75);
+$heading-medium: toRem(54);
+$heading-small: toRem(39);
+$heading-xsmall: toRem(30);
+$body-xlarge: toRem(24); 
+$body-large: toRem(21); 
+$body-medium: toRem(18);
+$body-small: toRem(15); 
+$body-xsmall: toRem(13);
+
+
+.head.xlarge{
+    font-size: $heading-xlarge
+}
+
+.head.large{
+    font-size: $heading-large
+}
+
+.head.medium{
+    font-size: $heading-medium
+}
+
+.head.small{
+    font-size: $heading-small
+}
+
+.head.xsmall{
+    font-size: $heading-xsmall
+}
+
+.body.xlarge{
+    font-size: $body-xlarge
+}
+
+.body.large{
+    font-size: $body-large
+}
+
+.body.medium{
+    font-size: $body-medium
+}
+
+.body.small{
+    font-size: $body-small
+}
+
+.body.xsmall{
+    font-size: $body-xsmall
+}
+
+// Remove default browser styles
+h1, h2, h3, h4, h5, h6, a, p, pre, button {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    text-decoration: none;
+}
