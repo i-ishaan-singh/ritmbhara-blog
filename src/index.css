@@ -2897,3 +2897,22 @@ a.footer-link {
     padding: 0; }
   .home-page-landing img {
     top: -40%; } }
+
+@media screen and (max-width: 550px) {
+  .home-page-landing .rt-button {
+    width: 100%; }
+  .lp-wrp {
+    padding-left: 1.5rem; }
+  .lsc {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+    .lsc .lsc-lft-arr, .lsc .lsc-rt-arr {
+      bottom: 2rem;
+      top: auto;
+      width: 40%; }
+  .h2-desc .rt-button {
+    width: 100%; }
+  .body.small {
+    font-size: 1.15rem; }
+  .rt-button {
+    font-size: 1.25rem; } }

@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { ArrowRight } from 'react-feather';
+import { Typo } from '../Typography/Typography';
 
 const emptyArr = [];
 
@@ -12,9 +13,9 @@ const ArrowList = function(props){
             return <div key={idx} className="list-item fr fg-10">
                         
                         <ArrowRight size="2em"/>
-                        <div className="fw">
+                        <Typo comp="div" className="fw">
                             {_i}
-                        </div>
+                        </Typo>
                     </div>    
         })    
     } ,[data]);
