@@ -2,10 +2,46 @@
 
 ## Fixed
 
-- Button looking smaller in Smaller Resolutions
-- Font size of body small increased.
-- Font Size of buttons increased
-- Changed layout of single light card.
+- On Refresh Other pages were not loading
+- Section Separator not spaiing 100% on some pages,.
 
+## Added
+- Contact Us Page
 
+### Components
 
+#### Buttons
+- Added Disabled Stage to Buttons
+
+#### Form
+- Added Form and Form Item Component
+- Error State
+- Validation
+- Form Controlled Mode.
+
+#### Input
+- Added Input Component
+- Added TextArea Component
+
+#### Cards
+- Added Icon Text Card
+
+#### Layout
+- Added Right Left Image Context Layout section.
+
+#### Text Sections
+- H1H2P Section
+- Added CTA support for H3Description Component
+
+#### Loading Icon
+- Added component. 
+- Added Page Loader
+
+### Icons
+- Email
+- Location
+- Phone
+
+## Pages
+- Contact Us Page Added
+- Improved SEO

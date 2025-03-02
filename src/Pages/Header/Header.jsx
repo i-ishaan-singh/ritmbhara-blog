@@ -30,7 +30,7 @@ const Header = function(){
     },[]);
 
 
-    return (<div 
+    return (<header 
                 role="banner"
                 className={_classNames}
             >
@@ -48,7 +48,7 @@ const Header = function(){
                 <div className='fw fr header-links-wrapper  jc-e'>
                     <Typo comp="div" className="header-links fr ai-c fg-20" size="large">
                         <HeaderLinks link="/about">About</HeaderLinks>
-                        <HeaderLinks link="/contact">Contact</HeaderLinks>
+                        <HeaderLinks link="/contact-us">Contact</HeaderLinks>
                         <HeaderLinks link="/events">Events</HeaderLinks>
                         <Button>Learn More</Button>
                     </Typo>
@@ -57,7 +57,7 @@ const Header = function(){
                     <Bars onClick={toggleSideNav} className="header-icon"/>
                 </div>
                 <SideNav show={sidenavShow} onClose={toggleSideNav}/>
-            </div>)
+            </header>)
 }
 
 export {Header}

@@ -70,6 +70,9 @@ ul {
   background: light-dark(#343332, #fdfdfc);
   color: light-dark(#fdfdfc, #343332); }
 
+.t-red {
+  color: #df4949; }
+
 /*@font-face {
     font-family: 'Cormorant'; 
     src: url('./Cormorant/Cormorant-Italic-VariableFont_wght.ttf') format(truetype);
@@ -613,22 +616,42 @@ body {
   border-bottom-right-radius: 4.8rem; }
 
 .br-2x {
-  border-radius: 4.66667rem; }
+  border-radius: 2rem; }
 
 .br-tl-2x {
-  border-top-left-radius: 4.66667rem; }
+  border-top-left-radius: 2rem; }
 
 .br-tr-2x {
-  border-top-right-radius: 4.66667rem; }
+  border-top-right-radius: 2rem; }
 
 .br-bl-2x {
-  border-bottom-left-radius: 4.66667rem; }
+  border-bottom-left-radius: 2rem; }
 
 .br-br-2x {
-  border-bottom-right-radius: 4.66667rem; }
+  border-bottom-right-radius: 2rem; }
+
+.br-3x {
+  border-radius: 1rem; }
+
+.br-tl-3x {
+  border-top-left-radius: 1rem; }
+
+.br-tr-3x {
+  border-top-right-radius: 1rem; }
+
+.br-bl-3x {
+  border-bottom-left-radius: 1rem; }
+
+.br-br-3x {
+  border-bottom-right-radius: 1rem; }
 
 .prevent-scroll {
   overflow: hidden; }
+
+.disabled {
+  user-select: none !important;
+  pointer-events: none !important;
+  opacity: 0.4 !important; }
 
 .p-1 {
   padding: 0.2rem; }
@@ -2550,15 +2573,18 @@ a:not(.rt-button):focus-visible, div:focus-visible, svg:focus-visible {
   font-size: 1.4rem; }
 
 .body.medium {
-  font-size: 1.2rem; }
+  font-size: 1.3rem; }
 
 .body.small {
-  font-size: 1rem; }
+  font-size: 1.03333rem; }
 
 .body.xsmall {
   font-size: 0.86667rem; }
 
-h1, h2, h3, h4, h5, h6, a, p, pre, button {
+.bold {
+  font-weight: bold; }
+
+h1, h2, h3, h4, h5, h6, a, p, pre, button, input, textarea, label {
   margin: 0;
   padding: 0;
   font-size: inherit;
@@ -2648,6 +2674,33 @@ img.bars-logo {
   display: grid;
   grid-template-columns: 42% auto; }
 
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 22.66667rem;
+  overflow: hidden; }
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 22.66667rem; }
+
+.gmap_iframe {
+  height: 22.66667rem !important; }
+
+.contact-us-section {
+  display: grid;
+  grid-template-columns: 32.66667rem auto;
+  grid-template-areas: "a b"; }
+
+.cu-ls {
+  grid-area: a; }
+
+.cu-rs {
+  grid-area: b; }
+
 .r-card-wrapper {
   height: 100%;
   display: grid;
@@ -2675,6 +2728,10 @@ img.r-card-img {
   height: 0.13333rem;
   width: 100%;
   border-radius: 0.06667rem; }
+
+.rl-image-content {
+  width: 50rem;
+  flex-shrink: 0; }
 
 li.light-square-cards {
   list-style: none;
@@ -2734,6 +2791,14 @@ li.light-square-cards {
   position: relative;
   width: 100%; }
 
+.it-card {
+  height: 15.33333rem;
+  width: 15.33333rem; }
+
+.icon-container {
+  color: light-dark(#282d25, #dbdfd8);
+  font-size: 2rem; }
+
 img.footer-logo {
   max-width: 100%;
   width: 16.66667rem; }
@@ -2743,6 +2808,84 @@ a.footer-link {
   width: 3em;
   display: flex;
   color: light-dark(#333432, #fcfdfc); }
+
+.page-loader .loader {
+  top: -8rem; }
+
+.loader {
+  width: calc(100px - 24px);
+  height: 50px;
+  position: relative; }
+
+.loader-small-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: flippx 2s infinite linear; }
+
+.loader-small-circle:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: light-dark(#74816a, #74816a);
+  transform-origin: -24px 50%;
+  animation: spin 1s infinite linear; }
+
+.loader-big-circle {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: light-dark(#656153, #9a9684);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  z-index: 2; }
+
+@keyframes flippx {
+  0%, 49% {
+    transform: scaleX(1); }
+  50%, 100% {
+    transform: scaleX(-1); } }
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg); } }
+
+.page-loader {
+  height: 80vh; }
+
+*:-webkit-autofill {
+  background-color: light-dark(#f2f5f0, #121310) !important;
+  -webkit-box-shadow: 0 0 0px 1000px light-dark(#f2f5f0, #121310) inset;
+  box-shadow: 0 0 0px 1000px light-dark(#f2f5f0, #121310) inset; }
+
+input, .rt-textarea-wr {
+  border: 2px solid light-dark(#dbdfd8, #282d25);
+  background-color: white; }
+  input::placeholder, .rt-textarea-wr::placeholder {
+    color: light-dark(#8d9a84, #5b6553); }
+  input:focus, input:focus-within, .rt-textarea-wr:focus, .rt-textarea-wr:focus-within {
+    border-color: light-dark(#5b6553, #8d9a84); }
+
+.rt-invalid input, .rt-invalid .rt-textarea-wr {
+  border-color: #df4949; }
+
+textarea {
+  border: none;
+  width: 100%; }
+
+textarea {
+  resize: vertical;
+  max-width: 100%;
+  height: 10rem;
+  min-height: 4rem; }
 
 @media screen and (max-width: 2870px) {
   .pl-180 {
@@ -2849,7 +2992,21 @@ a.footer-link {
     padding-left: 8rem; }
   .lsc-lft-arr, .lsc-rt-arr {
     display: flex;
-    opacity: 1; } }
+    opacity: 1; }
+  .contact-us-section {
+    grid-template-columns: 15.33333rem auto; }
+  .rl-img {
+    display: grid;
+    grid-template-rows: auto 20rem;
+    grid-template-columns: auto 5rem auto;
+    grid-template-areas: "text text text" "li d ri"; }
+  .rl-i-l {
+    grid-area: li; }
+  .rl-i-r {
+    grid-area: ri; }
+  .rl-image-content {
+    width: 100%;
+    grid-area: text; } }
 
 @media screen and (max-width: 850px) {
   .lp-wrp {
@@ -2886,7 +3043,20 @@ a.footer-link {
   .palette-accent {
     flex-direction: column;
     padding-right: 0;
-    padding-left: 0; } }
+    padding-left: 0; }
+  .cu-rs-hd {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .contact-us-section {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 6rem; }
+    .contact-us-section .cu-rs {
+      padding: 0; }
+    .contact-us-section .cu-ls .it-card {
+      flex: 1 1 46%; } }
 
 @media screen and (max-width: 600px) {
   .main-header-text {
@@ -2896,7 +3066,9 @@ a.footer-link {
   .step-cards-wrapper {
     padding: 0; }
   .home-page-landing img {
-    top: -40%; } }
+    top: -40%; }
+  .rt-button {
+    width: 100%; } }
 
 @media screen and (max-width: 550px) {
   .home-page-landing .rt-button {
@@ -2910,9 +3082,9 @@ a.footer-link {
       bottom: 2rem;
       top: auto;
       width: 40%; }
-  .h2-desc .rt-button {
-    width: 100%; }
   .body.small {
     font-size: 1.15rem; }
   .rt-button {
-    font-size: 1.25rem; } }
+    font-size: 1.25rem; }
+  .contact-us-section .cu-ls .it-card {
+    flex: 1 1 100%; } }

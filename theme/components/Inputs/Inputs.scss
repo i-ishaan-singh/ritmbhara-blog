@@ -1,0 +1,40 @@
+
+
+
+*:-webkit-autofill {
+    background-color: $palette-base !important;
+    -webkit-box-shadow: 0 0 0px 1000px $palette-base inset;
+    box-shadow: 0 0 0px 1000px $palette-base inset;
+}
+
+
+input, .rt-textarea-wr{
+    border: 2px solid $palette-accent-lighter;
+    background-color: white;
+
+    &::placeholder{
+        color: $palette-accent-light;
+    }
+
+    &:focus, &:focus-within{
+        border-color: $palette-accent-dark;
+    }
+}
+
+.rt-invalid{
+    input, .rt-textarea-wr{
+        border-color: $red;
+    }
+}
+
+textarea{
+    border: none;
+    width: 100%;
+}
+
+textarea{
+    resize: vertical;
+    max-width: 100%;
+    height: 10rem;
+    min-height: 4rem;
+}

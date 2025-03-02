@@ -50,7 +50,7 @@ const SideNav = function(props){
                 </div>
                 <Typo comp="div" className="bars-nav-content fc ai-c fg-10 fh pt-20" type="head" size="small">
                     <NavigationLink onClick={onClose} to="/about" className="bars-link">About</NavigationLink>
-                    <NavigationLink onClick={onClose} to="/contact" className="bars-link">Contact</NavigationLink>
+                    <NavigationLink onClick={onClose} to="/contact-us" className="bars-link">Contact</NavigationLink>
                     <NavigationLink onClick={onClose} to="/events" className="bars-link">Events</NavigationLink>
                 </Typo>
             </div>, document.body);

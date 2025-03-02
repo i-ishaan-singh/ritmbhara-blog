@@ -17,51 +17,60 @@ import meditatingPerson from "src/assets/images/meditatingPerson.png"
 const HomePage = function(){
 
     return <div className="fw">
-                <LandingPageImage
-                    className='home-page-landing'
-                    header="TRANSFORMATIVE HEALING FOR YOUR SOUL"
-                    description ={<>Awaken Your <em>True Self</em>: Heal, Grow, <em>Belong</em></>}
-                    cta={'Start Your Journey'}
-                    imgSrc={ishaanImage}
-                />
+                <section>
+                    <LandingPageImage
+                        className='home-page-landing'
+                        header="TRANSFORMATIVE HEALING FOR YOUR SOUL"
+                        description ={<>Awaken Your <em>True Self</em>: Heal, Grow, <em>Belong</em></>}
+                        cta={'Start Your Journey'}
+                        imgSrc={ishaanImage}
+                    />
+                </section>
                 <TopSectionSeparator/>
-                <H3Description  //
-                    header={<>We are here together because we seek <em>more than just healing.</em></>}
-                    description={
-                    <>
-                    At Ritmbhara Svasth Parivar, healing is only the beginning. <em>Together</em>, we rediscover who we truly are—free from trauma, stress, and limitations. Through ancient wisdom, modern techniques, and <em>unwavering care</em>, we guide you toward spiritual bliss, optimal health, and a supportive community where no one walks alone. 
-                    <br/><br/>
-                    Whether you’re navigating challenges or seeking deeper meaning, this is where <em>your transformation begins</em>.
-                    </>
-                    }
-                />
-                <RightImageCard
-                    imgSrc={meditatingPerson}
-                >
-                    <Typo comp="h3" type="head" size="medium" accent={true} >What is Spiritual Bliss?</Typo>
-                    <Typo comp="h4" type="body" size="large"  className="pl-3 pb-25">A Journey to Your True Self</Typo>
-                    <ArrowList
-                        data={
-                            [
-                                'Experience profound inner peace that stays with you, no matter what happens around you—freeing you from stress, fear, and doubt.',
-                                'Rediscover your true self—a state of boundless freedom where you feel connected to everyone and everything, fostering love, compassion, and unity.',
-                                'Unlock heightened awareness and intuition, allowing you to navigate life with clarity, purpose, and confidence in every decision you make.',
-                                'Heal deeply rooted traumas and energy blockages, transforming pain into strength and opening doors to joy, creativity, and limitless potential.',
-                                'Cultivate a lifestyle of holistic well-being—physically vibrant, mentally sharp, emotionally balanced, and spiritually awakened—for sustained happiness and fulfillment.'
-                                
-
-                            ]
+                <section>
+                    <H3Description
+                        header={<>We are here together because we seek <em>more than just healing.</em></>}
+                        description={
+                        <>
+                        At Ritmbhara Svasth Parivar, healing is only the beginning. <em>Together</em>, we rediscover who we truly are—free from trauma, stress, and limitations. Through ancient wisdom, modern techniques, and <em>unwavering care</em>, we guide you toward spiritual bliss, optimal health, and a supportive community where no one walks alone. 
+                        <br/><br/>
+                        Whether you’re navigating challenges or seeking deeper meaning, this is where <em>your transformation begins</em>.
+                        </>
                         }
                     />
-                </RightImageCard>
-                <CenterRightImage
-                    heading={'Hi, I’m Ishaan Singh. '}
-                    imgSrc={ishaanImage}
-                    title={'My role is simply to remind you of what you’ve always known deep inside.'}
-                    description={<>I believe every one of us is a <em>divine being</em>, temporarily experiencing human life. We’ve chosen this existence — every challenge, relationship, and lesson — to grow and remember our true nature. My role is to guide you back to that realization, helping you see that you’re not limited or powerless; you are the creator of your reality. I aim to empower you to transcend limitations and embrace your limitless potential.</>}
-                    subDescription={<>This journey isn’t just for individuals — it’s about creating a world where humanity thrives in harmony with its divine essence. Let’s embark on this transformative path as Svasth Parivar.</>}
-                    cta={'Learn More About Me'}
-                />
+                </section>
+                <section>
+                    <RightImageCard
+                        imgSrc={meditatingPerson}
+                    >
+                        <Typo comp="h3" type="head" size="medium" accent={true} >What is Spiritual Bliss?</Typo>
+                        <Typo comp="h4" type="body" size="large"  className="pl-3 pb-25">A Journey to Your True Self</Typo>
+                        <ArrowList
+                            data={
+                                [
+                                    'Experience profound inner peace that stays with you, no matter what happens around you—freeing you from stress, fear, and doubt.',
+                                    'Rediscover your true self—a state of boundless freedom where you feel connected to everyone and everything, fostering love, compassion, and unity.',
+                                    'Unlock heightened awareness and intuition, allowing you to navigate life with clarity, purpose, and confidence in every decision you make.',
+                                    'Heal deeply rooted traumas and energy blockages, transforming pain into strength and opening doors to joy, creativity, and limitless potential.',
+                                    'Cultivate a lifestyle of holistic well-being—physically vibrant, mentally sharp, emotionally balanced, and spiritually awakened—for sustained happiness and fulfillment.'
+                                    
+
+                                ]
+                            }
+                        />
+                    </RightImageCard>
+                </section>
+                
+                <section>
+                    <CenterRightImage
+                        heading={'Hi, I’m Ishaan Singh. '}
+                        imgSrc={ishaanImage}
+                        title={'My role is simply to remind you of what you’ve always known deep inside.'}
+                        description={<>I believe every one of us is a <em>divine being</em>, temporarily experiencing human life. We’ve chosen this existence — every challenge, relationship, and lesson — to grow and remember our true nature. My role is to guide you back to that realization, helping you see that you’re not limited or powerless; you are the creator of your reality. I aim to empower you to transcend limitations and embrace your limitless potential.</>}
+                        subDescription={<>This journey isn’t just for individuals — it’s about creating a world where humanity thrives in harmony with its divine essence. Let’s embark on this transformative path as Svasth Parivar.</>}
+                        cta={'Learn More About Me'}
+                    />
+                </section>
                 <AccentBar>
                     <LightSquareCardGroup
                         header={'How Can We Help'}
@@ -153,4 +162,4 @@ const HomePage = function(){
             </div>
 }
 
-export {HomePage}
+export default HomePage

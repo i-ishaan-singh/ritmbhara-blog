@@ -6,7 +6,7 @@ import { Facebook, Instagram, Mail, Youtube } from 'react-feather'
 const Footer = function(){
 
 
-    return <div className="palette-accent px-80 py-20 fr jc-c">
+    return <footer className="palette-accent px-80 py-20 fr jc-c">
                 <div className="fw"></div>
                 <div className="center-section fw fc jc-c ai-c fg-10">
                     <img src={logo} className="footer-logo"/>
@@ -32,7 +32,7 @@ const Footer = function(){
                 </div>
                 <div className="fw"></div>
 
-            </div>
+            </footer>
 
 }
 

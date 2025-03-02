@@ -105,3 +105,7 @@ $contrast-dark: light-dark($b-contrast-dark, $b-contrast-light);
     background: $contrast-dark;
     color: $contrast-light;
 }
+
+.t-red{
+    color: $red;
+}

@@ -244,6 +244,35 @@
         display: flex;
         opacity: 1
     }
+
+    .contact-us-section{
+        grid-template-columns: toRem(230) auto;
+    }
+
+    .rl-img{
+        display: grid;
+        grid-template-rows: auto 20rem;
+        grid-template-columns: auto 5rem auto;
+        grid-template-areas: 
+            "text text text"
+             "li d ri";
+    }
+
+    .rl-i-l{
+        grid-area: li;
+    }
+
+    .rl-i-r{
+        grid-area: ri;
+    }
+
+    .rl-image-content{
+        width: 100%;
+        grid-area: text;
+    }
+
+
+
 }
 
 
@@ -307,6 +336,29 @@
         padding-right: 0;
         padding-left: 0;
     }
+
+    .cu-rs-hd {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-us-section{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 6rem;
+
+        .cu-rs{
+            padding: 0;
+        }
+
+        .cu-ls{
+            .it-card{
+                flex: 1 1 46%;
+            }            
+        }
+    }
 }
 
 
@@ -326,6 +378,10 @@
 
     .home-page-landing img {
         top: -40%;
+    }
+
+    .rt-button {
+        width: 100%;
     }
 
 
@@ -353,11 +409,7 @@
         }
     }
 
-    .h2-desc{
-        .rt-button {
-            width: 100%;
-        }
-    }
+    
 
     .body.small{
         font-size: 1.15rem;
@@ -365,6 +417,13 @@
 
     .rt-button{
         font-size: 1.25rem;
+    }
+    .contact-us-section{
+        .cu-ls{
+            .it-card{
+                flex: 1 1 100%;
+            }            
+        }
     }
 
 }

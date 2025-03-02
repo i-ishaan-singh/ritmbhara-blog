@@ -206,26 +206,52 @@ body {
 
 
 .br-2x {
-    border-radius: toRem(70);
+    border-radius: toRem(30);
 }
 
 .br-tl-2x {
-    border-top-left-radius: toRem(70);
+    border-top-left-radius: toRem(30);
 }
 
 .br-tr-2x {
-    border-top-right-radius: toRem(70);
+    border-top-right-radius: toRem(30);
 }
 
 .br-bl-2x {
-    border-bottom-left-radius: toRem(70);
+    border-bottom-left-radius: toRem(30);
 }
 
 .br-br-2x {
-    border-bottom-right-radius: toRem(70);
+    border-bottom-right-radius: toRem(30);
+}
+
+.br-3x {
+    border-radius: toRem(15);
+}
+
+.br-tl-3x {
+    border-top-left-radius: toRem(15);
+}
+
+.br-tr-3x {
+    border-top-right-radius: toRem(15);
+}
+
+.br-bl-3x {
+    border-bottom-left-radius: toRem(15);
+}
+
+.br-br-3x {
+    border-bottom-right-radius: toRem(15);
 }
 
 
 .prevent-scroll{
     overflow: hidden;
+}
+
+.disabled {
+    user-select: none !important;
+    pointer-events: none !important;
+    opacity: 0.4 !important;
 }

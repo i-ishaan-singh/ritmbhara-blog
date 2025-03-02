@@ -1,0 +1,22 @@
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: toRem(340);
+    overflow: hidden;
+}
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: toRem(340);
+}
+.gmap_iframe {
+    height: toRem(340) !important;
+}
+
+.contact-us-section{
+    display: grid;
+    grid-template-columns: toRem(490) auto;
+    
+}

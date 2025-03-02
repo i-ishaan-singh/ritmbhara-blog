@@ -11,7 +11,7 @@ const TopSectionSeparator = function(props){
         } = props;
 
     const _classNames = useMemo(function(){
-        return classNames('section-separator pt-20', className, primaryContainer)
+        return classNames('section-separator pt-20 fw', className, primaryContainer)
     },[className, primaryContainer]);
 
     const _transitionClassNames = useMemo(function(){
@@ -35,7 +35,7 @@ const BottomSectionSeparator = function(props){
         } = props;
 
     const _classNames = useMemo(function(){
-        return classNames('section-separator pb-20', className, primaryContainer)
+        return classNames('section-separator pb-20 fw', className, primaryContainer)
     },[className, primaryContainer]);
 
     const _transitionClassNames = useMemo(function(){

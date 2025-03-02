@@ -5,8 +5,8 @@ $heading-small: toRem(39);
 $heading-xsmall: toRem(30);
 $body-xlarge: toRem(24); 
 $body-large: toRem(21); 
-$body-medium: toRem(18);
-$body-small: toRem(15); 
+$body-medium: toRem(19.5);
+$body-small: toRem(15.5); 
 $body-xsmall: toRem(13);
 
 
@@ -50,8 +50,12 @@ $body-xsmall: toRem(13);
     font-size: $body-xsmall
 }
 
+.bold{
+    font-weight: bold;
+}
+
 // Remove default browser styles
-h1, h2, h3, h4, h5, h6, a, p, pre, button {
+h1, h2, h3, h4, h5, h6, a, p, pre, button, input, textarea, label {
     margin: 0;
     padding: 0;
     font-size: inherit;
